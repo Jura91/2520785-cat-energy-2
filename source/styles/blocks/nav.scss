@@ -2,11 +2,17 @@
   background-color: red;
   position: relative;
 }
+
 .nav__toggle {
   position: absolute;
-  top: -58px;
-  right: 0;
+  top: -50px;
+  right: 21px;
   width: 24px;
   height: 24px;
   background-color: blue;
+  border: none;
+}
+
+.nav__list {
+  display: none;
 }
