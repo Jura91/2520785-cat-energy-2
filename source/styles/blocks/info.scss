@@ -1,0 +1,93 @@
+.info {
+  width: 280px;
+  min-height: 380px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.info__list {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.info__title {
+  min-width: 225px;
+  min-height: 40px;
+  font-family: $oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.info__item {
+  width: 200px;
+  min-height: 54px;
+  font-family: $lato;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 80px;
+  padding-bottom: 26px;
+
+  &:last-child {
+    padding-bottom: 55px;
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $thema;
+    position: absolute;
+    left: 0;
+  }
+}
+
+.info--nutrients {
+
+  &::after {
+    content: url("../../images/info/nutrients.svg");
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    z-index: 1;
+  }
+}
+
+.info--powder {
+
+  &::after {
+    content: url("../../images/info/powder.svg");
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    z-index: 1;
+  }
+}
+
+.info--eat {
+
+  &::after {
+    content: url("../../images/info/eat.svg");
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    z-index: 1;
+  }
+}
+
+.info--changes {
+
+  &::after {
+    content: url("../../images/info/changes.svg");
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    z-index: 1;
+  }
+}
