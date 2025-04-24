@@ -1,5 +1,4 @@
 .programs {
-  width: 280px;
   min-height: 266px;
   background-color: #f2f2f2;
   margin: 20px;
@@ -41,7 +40,7 @@
   &::after {
     content: url("../../images/cat-slim.svg");
     position: absolute;
-    top: 20px;
+    top: 21px;
     left: 27px;
     z-index: 1;
   }
@@ -52,7 +51,7 @@
   &::after {
     content: url("../../images/cat-gain.svg");
     position: absolute;
-    top: 33px;
+    top: 34px;
     left: 13px;
     z-index: 1;
   }
@@ -64,11 +63,11 @@
   line-height: 18px;
   font-weight: 400;
   color: #444444;
-  width: 227px;
   min-height: 90px;
   margin: 0;
   padding-top: 29px;
   padding-left: 20px;
+  padding-right: 28px;
   position: relative;
 
   &::after {
@@ -99,5 +98,13 @@
   padding: 42px 173px 22px 20px;
   background-image: url("../../images/programs-arrow.svg");
   background-repeat: no-repeat;
-  background-position: 120px 43px;
+  background-position: 120px 44px;
+
+  &:hover {
+    color: #000000;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }

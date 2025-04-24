@@ -1,11 +1,10 @@
 .product {
-  margin: 0;
+  margin: 20px;
   padding: 0;
-  max-width: 320px;
   background-image: url("./source/images/rectangle.png");
   background-repeat: no-repeat;
   background-size: auto;
-  color:#ffffff
+  color: #ffffff;
 }
 
 .product__wrapper {
@@ -13,7 +12,7 @@
   padding-bottom: 135px;
   margin-bottom: 3px;
 
-  &::before{
+  &::before {
     content: "";
     width: 280px;
     height: 270px;
@@ -23,12 +22,11 @@
     transform: translateX(-50%);
     background: url("../../images/product-mobile.png") no-repeat 0 0;
     z-index: 20;
-
   }
 }
 
 .product__block {
-  background-image: url(../../images/index-background.jpg);
+  background-image: url("../../images/index-background.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: 27px;
@@ -51,7 +49,7 @@
 }
 
 .product__title {
-  margin: 0 auto 28px;
+  margin: -19 auto 27px;
   text-align: center;
   width: 270px;
   font-family: $oswald;
@@ -77,16 +75,26 @@
 }
 
 .product__button {
+  min-width: 260px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   font-family: $oswald;
   color: #ffffff;
-  padding: 10px 10px;
+  padding: 10px;
   text-transform: uppercase;
   background-color: $thema;
   display: block;
-  margin: 0 20px;
+  margin: 0;
   text-align: center;
   text-decoration: none;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

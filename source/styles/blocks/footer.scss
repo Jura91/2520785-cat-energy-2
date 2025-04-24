@@ -2,11 +2,160 @@
 
 }
 
+.footer__text {
+  font-family: $oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-style: normal;
+  margin: 0;
+  padding: 26px 0 26px 21px;
+  min-height: 60px;
+}
+
+.footer__address__text {
+  font-family: $lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  font-style: normal;
+  margin: 0;
+  padding: 26px 20px 26px 23px;
+  min-height: 60px;
+}
+
+.footer__address {
+  display: flex;
+}
 .footer__map {
 width: 320px;
 height: 362px;
-background-image: url('../../images/footer-map.png');
-background-size: cover;
+position: relative;
+}
 
+.footer__map__card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
 
+.footer__map__picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.footer__block {
+  min-height: 240px;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.footer__block__logo {
+  display: block;
+  padding-top: 40px;
+  padding-left: 96px;
+  position: relative;
+
+  &::after {
+  content: "";
+  border: 1px solid #d9d9d9;
+  min-width: 280px;
+  position: absolute;
+  left: 20;
+  bottom: -17px;
+}
+&:hover {
+  fill: #3e3e3e;
+}
+
+&:focus {
+  fill: #3e3e3e;
+}
+
+&:active {
+  fill: #6b6b6b;
+}
+}
+.footer__logo__list {
+  margin: 40px 94px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo__wrap {
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:focus {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: #68b738;
+    opacity: 30%;
+  }
+}
+
+.footer__academy__block {
+  margin: 0 20px 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+
+    &::before {
+    content: "";
+    border: 1px solid #d9d9d9;
+    min-width: 280px;
+    position: absolute;
+    left: 0;
+    top: -27px;
+}
+}
+
+.footer__academy {
+  font-family: $lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.footer__academy__link {
+  text-decoration: none;
+  color: #444444;
+
+  &:hover {
+    fill: #444444;
+  }
+
+  &:focus {
+    fill: #444444;
+  }
+
+  &:active {
+    fill: #444444;
+    opacity: 30%;
+  }
+}
+
+.footer__academy__link--color:hover {
+  fill: #68b738;
+}
+
+.footer__academy__link--color:focus {
+  fill: #68b738;
+}
+
+.footer__academy__link--color:active {
+  fill: #68b738;
+  opacity: 30%;
 }

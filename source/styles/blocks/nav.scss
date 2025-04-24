@@ -1,5 +1,4 @@
 .nav {
-  background-color: red;
   position: relative;
 }
 
@@ -9,10 +8,35 @@
   right: 21px;
   width: 24px;
   height: 24px;
-  background-color: blue;
+  background-image: url(../../images/mobile-open.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-color: #ffffff;
   border: none;
+  display: none;
 }
 
-.nav__list {
+.nav--closed .nav__toggle {
+  display: block;
+}
+
+.nav--opened .nav__toggle {
+  display: block;
+  background-image: url(../../images/mobile-close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-color: #ffffff;
+}
+
+.nav--closed .nav__list {
   display: none;
+}
+
+.nav--opened .nav__list {
+  display: block;
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
 }
