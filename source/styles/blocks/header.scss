@@ -1,5 +1,18 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  padding-top: 65px;
+  position: relative;
+  background: url("../../images/logo/mobile-text.svg") no-repeat center 23px;
+  z-index: 50;
+
+  @media (min-width: $tablet) {
+    padding-top: 0;
+    background: none;
+  }
 }
+
+.header__logo {
+  position: absolute;
+  top: 13px;
+  left: 20px;
+}
+

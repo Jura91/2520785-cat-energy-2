@@ -1,0 +1,166 @@
+.footer {
+
+}
+
+.footer__address {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.footer__text {
+  font-family: $oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-style: normal;
+  margin: 0;
+  padding: 26px 0;
+  min-height: 60px;
+  width: 140px;
+}
+
+.footer__address__text {
+  font-family: $lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  font-style: normal;
+  margin: 0;
+  padding: 26px 0;
+  min-height: 60px;
+  width: 140px;
+}
+
+.footer__map {
+  height: 362px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer__map__static {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.footer__map__card {
+  position: relative;
+  width: 100%;
+  z-index: 50;
+}
+
+.footer__map__picture {
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+.footer__map__google {
+
+}
+
+.footer__block {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 40px 20px 32px;
+}
+
+.footer__block__logo {
+  display: block;
+  width: 128px;
+  position: relative;
+  margin: 0 auto 16px;
+
+  &:hover {
+    fill: #3e3e3e;
+  }
+
+  &:focus {
+    fill: #3e3e3e;
+  }
+
+  &:active {
+    fill: #6b6b6b;
+  }
+}
+
+.footer__logo__list {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  justify-content: center;
+  gap: 24px;
+  margin: 0 0 20px;
+  padding: 20px 0 16px;
+  list-style: none;
+  display: flex;
+
+}
+
+.footer__logo__wrap {
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:focus {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: #68b738;
+    opacity: 30%;
+  }
+}
+
+.footer__academy__block {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.footer__academy {
+  font-family: $lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  padding-top: 7px;
+}
+
+.footer__academy__link {
+  text-decoration: none;
+  color: #444444;
+
+  &:hover {
+    fill: #444444;
+  }
+
+  &:focus {
+    fill: #444444;
+  }
+
+  &:active {
+    fill: #444444;
+    opacity: 30%;
+  }
+}
+
+.footer__academy__link--color:hover {
+  fill: #68b738;
+}
+
+.footer__academy__link--color:focus {
+  fill: #68b738;
+}
+
+.footer__academy__link--color:active {
+  fill: #68b738;
+  opacity: 30%;
+}
