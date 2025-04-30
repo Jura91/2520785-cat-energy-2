@@ -9,6 +9,11 @@
   padding: 0;
 }
 
+.program__item {
+  list-style: none;
+  padding: 29px 20px 20px;
+}
+
 .program__title {
   font-family: $oswald;
   font-size: 24px;
@@ -17,8 +22,8 @@
   color: #000000;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 30px;
-  padding-left: 90px;
+  padding-top: 0;
+  padding-left: 70px;
   position: relative;
 
 
@@ -30,8 +35,8 @@
     background: $thema;
     position: absolute;
     z-index: 1;
-    left: 20px;
-    top: 24px;
+    left: 0px;
+    top: -5px;
   }
 }
 
@@ -40,8 +45,8 @@
   &::after {
     content: url("../../images/cat-slim.svg");
     position: absolute;
-    top: 21px;
-    left: 27px;
+    top: -8px;
+    left: 7px;
     z-index: 1;
   }
 }
@@ -51,8 +56,8 @@
   &::after {
     content: url("../../images/cat-gain.svg");
     position: absolute;
-    top: 34px;
-    left: 13px;
+    top: 5px;
+    left: -7px;
     z-index: 1;
   }
 }
@@ -64,24 +69,20 @@
   font-weight: 400;
   color: #444444;
   min-height: 90px;
-  margin: 0;
-  padding-top: 29px;
-  padding-left: 20px;
-  padding-right: 28px;
+  margin: 0 0 19px;
+  padding: 29px 0 24px;
   position: relative;
 
   &::after {
     content: "";
-    border: 1px solid #d9d9d9;
-    width: 240px;
+    border-top: 1px solid #d9d9d9;
+    width: 100%;
+    height: 1px;
     display: block;
     position: absolute;
-    bottom: -24px;
+    bottom: 0;
+    left: 0px;
   }
-}
-
-.program__item {
-  list-style: none;
 }
 
 .program__link {
@@ -95,16 +96,31 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  padding: 42px 173px 22px 20px;
-  background-image: url("../../images/programs-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: 120px 44px;
+  padding: 0 38px 0 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    left: calc(100% - 25px);
+    top: 2px;
+    background-image: url("../../images/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    transition: width 0.5s ease;
+  }
 
   &:hover {
     color: #000000;
   }
 
+  &:hover::before {
+    width: 32px;
+  }
+
   &:active {
-    color: rgba(0, 0, 0, 0.3);
+    opacity: 30%;
   }
 }

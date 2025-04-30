@@ -2,6 +2,14 @@
 
 }
 
+.footer__address {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
 .footer__text {
   font-family: $oswald;
   font-size: 16px;
@@ -10,8 +18,9 @@
   text-transform: uppercase;
   font-style: normal;
   margin: 0;
-  padding: 26px 0 26px 21px;
+  padding: 26px 0;
   min-height: 60px;
+  width: 140px;
 }
 
 .footer__address__text {
@@ -21,76 +30,79 @@
   line-height: 20px;
   font-style: normal;
   margin: 0;
-  padding: 26px 20px 26px 23px;
+  padding: 26px 0;
   min-height: 60px;
+  width: 140px;
 }
 
-.footer__address {
-  display: flex;
-}
 .footer__map {
-width: 320px;
-height: 362px;
-position: relative;
+  height: 362px;
+  position: relative;
+  overflow: hidden;
 }
 
-.footer__map__card {
+.footer__map__static {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 50;
-}
-
-.footer__map__picture {
-  position: absolute;
+  width: 100%;
   top: 0;
   left: 0;
   z-index: 10;
 }
 
+.footer__map__card {
+  position: relative;
+  width: 100%;
+  z-index: 50;
+}
+
+.footer__map__picture {
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+.footer__map__google {
+
+}
+
 .footer__block {
-  min-height: 240px;
-  margin: 0;
-  padding: 0;
   background-color: #f2f2f2;
+  margin: 0;
+  padding: 40px 20px 32px;
 }
 
 .footer__block__logo {
   display: block;
-  padding-top: 40px;
-  padding-left: 96px;
+  width: 128px;
   position: relative;
+  margin: 0 auto 16px;
 
-  &::after {
-  content: "";
-  border: 1px solid #d9d9d9;
-  min-width: 280px;
-  position: absolute;
-  left: 20;
-  bottom: -17px;
-}
-&:hover {
-  fill: #3e3e3e;
-}
+  &:hover {
+    fill: #3e3e3e;
+  }
 
-&:focus {
-  fill: #3e3e3e;
+  &:focus {
+    fill: #3e3e3e;
+  }
+
+  &:active {
+    fill: #6b6b6b;
+  }
 }
 
-&:active {
-  fill: #6b6b6b;
-}
-}
 .footer__logo__list {
-  margin: 40px 94px;
-  padding: 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  justify-content: center;
+  gap: 24px;
+  margin: 0 0 20px;
+  padding: 20px 0 16px;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+
 }
 
 .footer__logo__wrap {
-
   &:hover {
     fill: #68b738;
   }
@@ -106,20 +118,11 @@ position: relative;
 }
 
 .footer__academy__block {
-  margin: 0 20px 40px 20px;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
-
-    &::before {
-    content: "";
-    border: 1px solid #d9d9d9;
-    min-width: 280px;
-    position: absolute;
-    left: 0;
-    top: -27px;
-}
 }
 
 .footer__academy {
@@ -127,6 +130,8 @@ position: relative;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  margin: 0;
+  padding-top: 7px;
 }
 
 .footer__academy__link {

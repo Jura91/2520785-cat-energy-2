@@ -19,19 +19,37 @@
 
 .nav--closed .nav__toggle {
   display: block;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .nav--opened .nav__toggle {
   display: block;
-  background-image: url(../../images/mobile-close.svg);
+  background-image: url("../../images/mobile-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
   background-color: #ffffff;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.nav__list {
+  @media (min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .nav--closed .nav__list {
   display: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .nav--opened .nav__list {
@@ -39,4 +57,8 @@
   position: absolute;
   width: 100%;
   background-color: #ffffff;
+
+  @media (min-width: $tablet) {
+    display: flex;
+  }
 }

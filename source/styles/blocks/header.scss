@@ -1,8 +1,13 @@
 .header {
-  padding-top: 64px;
+  padding-top: 65px;
   position: relative;
   background: url("../../images/logo/mobile-text.svg") no-repeat center 23px;
   z-index: 50;
+
+  @media (min-width: $tablet) {
+    padding-top: 0;
+    background: none;
+  }
 }
 
 .header__logo {
@@ -10,3 +15,4 @@
   top: 13px;
   left: 20px;
 }
+

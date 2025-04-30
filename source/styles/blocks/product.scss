@@ -1,5 +1,5 @@
 .product {
-  margin: 20px;
+  margin: 0;
   padding: 0;
   background-image: url("./source/images/rectangle.png");
   background-repeat: no-repeat;
@@ -29,7 +29,7 @@
   background-image: url("../../images/index-background.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  padding-top: 27px;
+  padding-top: 46px;
   padding-bottom: 162px;
   position: relative;
   background-color: #434246;
@@ -85,7 +85,7 @@
   text-transform: uppercase;
   background-color: $thema;
   display: block;
-  margin: 0;
+  margin: 0 20px;
   text-align: center;
   text-decoration: none;
 
