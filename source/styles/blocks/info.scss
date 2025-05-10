@@ -2,12 +2,33 @@
   min-height: 380px;
   margin: 0 20px;
   padding: 0 0 49px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    margin: 46px 30px 18px 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-bottom: 1 solid #e6e6e6;
+      min-width: 768px;
+      bottom: 14px;
+      left: -30px;
+    }
+
+  }
 }
 
 .info__list {
-margin: 0;
-padding: 0;
-list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
 }
 
 .info__title {
@@ -19,6 +40,11 @@ list-style: none;
   padding: 0;
   margin: 0;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .info__item {
@@ -35,6 +61,7 @@ list-style: none;
   &:last-child {
     margin-bottom: 0;
   }
+
   &::before {
     content: "";
     display: block;
@@ -47,21 +74,83 @@ list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: $tablet) {
+      width: 80px;
+      height: 80px;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    min-height: 280px;
+    width: 100%;
+    flex: 1 1 50%;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 140px 86px 0 0;
+
+    &:nth-child(even) {
+      padding-left: 29px;
+    }
+
+    &:last-child {
+      padding-top: 158px;
+      padding-right: 80px;
+    }
+
+    &:nth-child(3) {
+      padding-top: 158px;
+    }
+  }
+}
+
+.info--nutrients {
+  @media (min-width: $tablet) {
+    background-image: url(../../images/one.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.info--powder {
+  @media (min-width: $tablet) {
+    background-image: url(../../images/two.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.info--eat {
+  @media (min-width: $tablet) {
+    background-image: url(../../images/three.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.info--changes {
+  @media (min-width: $tablet) {
+    background-image: url(../../images/four.svg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
 .info--nutrients::before {
-    content: url("../../images/info/nutrients.svg");
+  content: url("../../images/info/nutrients.svg");
+
 }
 
 .info--powder::before {
-    content: url("../../images/info/powder.svg");
+  content: url("../../images/info/powder.svg");
 }
 
 .info--eat::before {
-    content: url("../../images/info/eat.svg");
+  content: url("../../images/info/eat.svg");
 }
 
 .info--changes::before {
-    content: url("../../images/info/changes.svg");
+  content: url("../../images/info/changes.svg");
 }

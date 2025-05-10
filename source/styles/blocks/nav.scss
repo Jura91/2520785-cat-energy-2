@@ -1,5 +1,9 @@
 .nav {
   position: relative;
+
+  @media (min-width: $tablet) {
+    margin-top: 3px;
+  }
 }
 
 .nav__toggle {
@@ -49,6 +53,8 @@
 
   @media (min-width: $tablet) {
     display: flex;
+    gap: 34px;
+    border: none;
   }
 }
 

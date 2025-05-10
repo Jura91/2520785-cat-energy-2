@@ -5,12 +5,47 @@
   background-repeat: no-repeat;
   background-size: auto;
   color: #ffffff;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    background: none;
+    padding: 53px 0 527px 90px;
+    width: 709px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+   &::before {
+   content: "";
+   position: absolute;
+   background: url("../../images/product-tablet.png") no-repeat 0 0;
+   width: 709px;
+   height: 609px;
+   z-index: 1;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   }
+  }
+
+  @media (min-width: $desktop) {
+    width: 1440px;
+    min-height: 694px;
+    // background-image: url("../../images/rectangle-desctop.png");
+    // background-repeat: no-repeat;
+    // background-size: auto;
+    padding: 0;
+  }
 }
 
 .product__wrapper {
   position: relative;
   padding-bottom: 135px;
   margin-bottom: 3px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 
   &::before {
     content: "";
@@ -22,8 +57,14 @@
     transform: translateX(-50%);
     background: url("../../images/product-mobile.png") no-repeat 0 0;
     z-index: 20;
+
+    @media (min-width: $tablet) {
+      display: none;
+
+     }
   }
 }
+
 
 .product__block {
   background-image: url("../../images/index-background.jpg");
@@ -45,6 +86,17 @@
     left: 0;
     top: 0;
     z-index: 1;
+
+    @media (min-width: $tablet) {
+      background: none;
+      padding-bottom: 0;
+     }
+  }
+
+  @media (min-width: $tablet) {
+    background: none;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -59,6 +111,20 @@
   color: #ffffff;
   position: relative;
   z-index: 10;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    margin: 0 0 40px;
+    margin-left: 0;
+    width: 440px;
+    font-family: $oswald;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: start;
+    line-height: 60px;
+    z-index: 40;
+    color: #000000;
+  }
 }
 
 .product__text {
@@ -72,10 +138,22 @@
   line-height: 14px;
   position: relative;
   z-index: 10;
+
+  @media (min-width: $tablet) {
+    width: 440px;
+    font-family: $oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    z-index: 40;
+    color: #000000;
+    margin: 0 0 50px;
+    padding: 0;
+    text-align: left;
+  }
 }
 
 .product__button {
-  min-width: 260px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -96,5 +174,21 @@
   &:active {
     background-color: #5eaa2f;
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet) {
+    width: 242px;
+    position: relative;
+    z-index: 10;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: $oswald;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding: 14px;
+    box-sizing: border-box;
   }
 }

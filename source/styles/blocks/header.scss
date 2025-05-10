@@ -7,6 +7,15 @@
   @media (min-width: $tablet) {
     padding-top: 0;
     background: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 13px 34px 0 10px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    margin: 43px 111px 0px 90px;
+
   }
 }
 
@@ -15,4 +24,3 @@
   top: 13px;
   left: 20px;
 }
-
