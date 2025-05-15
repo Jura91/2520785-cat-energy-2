@@ -1,4 +1,9 @@
-.footer {}
+.footer {
+
+  @media (min-width: $desktop) {
+    position: relative;
+  }
+}
 
 .footer__address {
   display: flex;
@@ -10,7 +15,20 @@
   @media (min-width: $tablet) {
     padding: 61px 70px 60px;
   }
-}
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 61px 0 0 82px;
+    justify-content: flex-start;
+    min-width: 565px;
+    min-height: 199px;
+    position: absolute;
+    z-index: 20;
+    background-color: #ffffff;
+    top: 94px;
+    left: 108px;
+    }
+  }
+
 
 .footer__text {
   font-family: $oswald;
@@ -28,6 +46,10 @@
     font-size: 20px;
     line-height: 26px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 110px;
   }
 }
 
@@ -48,6 +70,10 @@
     text-align: right;
     width: 160px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: left;
   }
 }
 
@@ -91,6 +117,10 @@
   @media (min-width: $tablet) {
     height: 100%;
   }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .footer__map-picture {
@@ -115,6 +145,12 @@
     padding: 40px 24px 32px;
     box-sizing: border-box;
     display: flex;
+  }
+
+  @media (min-width: $desktop) {
+    justify-content: space-around;
+    padding: 51px 24px 32px;
+    gap: 221px;
   }
 }
 
