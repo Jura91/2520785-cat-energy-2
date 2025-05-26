@@ -13,13 +13,14 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 0;
-    margin: 43px 111px 0 90px;
+    padding: 43px 0 0;
+    margin: 0 auto;
+    width: 1220px;
   }
 }
 
 .header__logo {
   position: absolute;
-  top: 13px;
-  left: 20px;
+  top: 54px;
+  left: 0;
 }

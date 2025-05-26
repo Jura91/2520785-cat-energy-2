@@ -9,7 +9,7 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--index">
   <header class="header">
     <a class="logo header__logo" href="#">
       <picture>
@@ -35,15 +35,17 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="page__main">
     <section class="product">
-      <div class="product__wrapper">
-        <div class="product__block">
-          <h1 class="product__title">Функциональное питание для котов</h1>
-          <p class="product__text">занялся собой? займись котом!</p>
+      <div class="product__container">
+        <div class="product__wrapper">
+          <div class="product__block">
+            <h1 class="product__title">Функциональное питание для котов</h1>
+            <p class="product__text">занялся собой? займись котом!</p>
+          </div>
         </div>
+        <a class="product__button" href="#">подобрать программу</a>
       </div>
-      <a class="product__button" href="#">подобрать программу</a>
     </section>
     <section class="program">
       <ul class="program__list">
@@ -87,31 +89,33 @@
             </dt>
           </dl>
         </div>
-        <p class="result__cost">затраты на питание: 15 000 руб.</p>
+        <p class="result__cost">затраты на питание: <span class="result__cost-wrap">15 000 руб.</span> </p>
       </div>
       <div class="result__wrap"></div>
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__invite">
-      <address class="footer__address">
-        <p class="footer__text">приглашаем к&nbsp;сотрудничеству дилеров!</p>
-        <p class="footer__address-text">
-          <span class="footer__address-bottom">ул. Большая Конюшенная, д. 19/8</span>
-          <span class="footer__address-bottom">Санкт-Петербург</span>
-        </p>
-      </address>
-    </div>
-    <div class="footer__map">
-      <div class="footer__map-google">
-        <iframe class="footer__map-card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104784696!2d30.320508377668784!3d59.93879417491515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0xa24b26c0d196de71!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1745087944898!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="footer__container">
+      <div class="footer__invite">
+        <address class="footer__address">
+          <p class="footer__text">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="footer__address-text">
+            <span class="footer__address-bottom">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="footer__address-bottom">Санкт-Петербург</span>
+          </p>
+        </address>
       </div>
-      <div class="footer__map-static">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="./images/map/footer-map-desktop.jpg">
-          <source media="(min-width: 768px)" srcset="./images/map/footer-map-tablet.jpg">
-          <img class="footer__map-picture" src="./images/map/footer-map-mobile.jpg" alt="Карта">
-        </picture>
+      <div class="footer__map">
+        <div class="footer__map-google">
+          <iframe class="footer__map-card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104784696!2d30.320508377668784!3d59.93879417491515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0xa24b26c0d196de71!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1745087944898!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer__map-static">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./images/map/footer-map-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="./images/map/footer-map-tablet.jpg">
+            <img class="footer__map-picture" src="./images/map/footer-map-mobile.jpg" alt="Карта">
+          </picture>
+        </div>
       </div>
     </div>
     <div class="footer__block">

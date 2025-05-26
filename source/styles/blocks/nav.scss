@@ -4,6 +4,12 @@
   @media (min-width: $tablet) {
     margin-top: 3px;
   }
+
+  @media (min-width: $desktop) {
+    width: 500px;
+    box-sizing: border-box;
+    padding-left: 22px;
+  }
 }
 
 .nav__toggle {
@@ -45,6 +51,12 @@
 .nav__list {
   @media (min-width: $tablet) {
     display: flex;
+    flex-wrap: wrap;
+    gap: 0 34px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 500px;
   }
 }
 
@@ -53,7 +65,8 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    gap: 34px;
+    flex-wrap: wrap;
+    gap: 0 34px;
     border: none;
   }
 }
@@ -66,5 +79,7 @@
 
   @media (min-width: $tablet) {
     display: flex;
+    flex-wrap: wrap;
+    gap: 0 34px;
   }
 }
