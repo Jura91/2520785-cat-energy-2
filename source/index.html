@@ -91,7 +91,29 @@
         </div>
         <p class="result__cost">затраты на питание: <span class="result__cost-wrap">15 000 руб.</span> </p>
       </div>
-      <div class="result__wrap"></div>
+      <div class="result__wrap">
+        <div class="slider">
+          <ul class="slider__list">
+            <li class="slider__screen slider__screen--before">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./images/slider/before-t@1x.png" width="560" height="512">
+                <source media="(min-width: 768px)" srcset="./images/slider/before-t@1x.png" width="560" height="512">
+                <img class="slider__image" src="./images/slider/before-m@1x.png" alt="Толстый кот">
+              </picture>
+            </li>
+            <li class="slider__screen slider__screen--after">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./images/slider/after-t@1x.png" width="560" height="512">
+                <source media="(min-width: 768px)" srcset="./images/slider/after-t@1x.png" width="560" height="512">
+                <img class="slider__image" src="./images/slider/after-m@1x.png" alt="Худой кот">
+              </picture>
+            </li>
+          </ul>
+          <button class="slider__control" type="button">
+            <span class="visually-hidden">Переключить слайдер</span>
+          </button>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -111,9 +133,9 @@
         </div>
         <div class="footer__map-static">
           <picture>
-            <source media="(min-width: 1440px)" srcset="./images/map/footer-map-desktop.jpg">
-            <source media="(min-width: 768px)" srcset="./images/map/footer-map-tablet.jpg">
-            <img class="footer__map-picture" src="./images/map/footer-map-mobile.jpg" alt="Карта">
+            <source media="(min-width: 1440px)" srcset="./images/footer-map/footer-map-d@1x.jpg">
+            <source media="(min-width: 768px)" srcset="./images/footer-map/footer-map-t@1x.jpg">
+            <img class="footer__map-picture" src="./images/footer-map/footer-map-m@1x.jpg" alt="Карта">
           </picture>
         </div>
       </div>

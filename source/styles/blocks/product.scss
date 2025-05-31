@@ -33,13 +33,13 @@
     margin-bottom: 81px;
 
     &::before {
-     width: 50%;
-     transform: translateX(0);
-     height: calc(100% + 163px);
-     bottom: unset;
-     top: -163px;
-     background: url(../../images/index-background-desktop.jpg) no-repeat 0 0;
-     background-size: auto 100%;
+      width: 50%;
+      transform: translateX(0);
+      height: calc(100% + 163px);
+      bottom: unset;
+      top: -163px;
+      background: url(../../images/index-background-desktop.jpg) no-repeat 0 0;
+      background-size: auto 100%;
     }
 
     &::after {
@@ -54,7 +54,7 @@
       z-index: 5;
       left: 50%;
 
-     }
+    }
   }
 }
 

@@ -5,7 +5,7 @@
   z-index: 50;
 
   @media (min-width: $tablet) {
-    padding-top: 0;
+    padding-top: 14px;
     background: none;
     display: flex;
     justify-content: flex-end;
@@ -21,6 +21,11 @@
 
 .header__logo {
   position: absolute;
-  top: 54px;
-  left: 0;
+  top: 13px;
+  left: 20px;
+
+  @media (min-width: $tablet) {
+    top: 25px;
+    left: 20px;
+  }
 }
