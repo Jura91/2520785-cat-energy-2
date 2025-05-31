@@ -2,8 +2,10 @@
 @import "./common/variables.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./common/visually-hidden.scss";
 
 /* BLOCKS */
+@import "./blocks/page.scss";
 @import "./blocks/header.scss";
 @import "./blocks/nav.scss";
 @import "./blocks/menu.scss";
@@ -13,4 +15,5 @@
 @import "./blocks/logo.scss";
 @import "./blocks/result.scss";
 @import "./blocks/footer.scss";
+@import "./blocks/slider.scss";
 

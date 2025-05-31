@@ -1,10 +1,20 @@
 .nav {
   position: relative;
+
+  @media (min-width: $tablet) {
+    margin-top: 3px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 500px;
+    box-sizing: border-box;
+    padding-left: 22px;
+  }
 }
 
 .nav__toggle {
   position: absolute;
-  top: -50px;
+  top: -45px;
   right: 21px;
   width: 24px;
   height: 24px;
@@ -41,6 +51,12 @@
 .nav__list {
   @media (min-width: $tablet) {
     display: flex;
+    flex-wrap: wrap;
+    gap: 0 34px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 500px;
   }
 }
 
@@ -49,6 +65,9 @@
 
   @media (min-width: $tablet) {
     display: flex;
+    flex-wrap: wrap;
+    gap: 0 34px;
+    border: none;
   }
 }
 
@@ -60,5 +79,7 @@
 
   @media (min-width: $tablet) {
     display: flex;
+    flex-wrap: wrap;
+    gap: 0 34px;
   }
 }

@@ -7,6 +7,15 @@
 
 .menu__item {
   border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet) {
+    border: none;
+    position: relative;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 8px;
+  }
 }
 
 .menu__link {
@@ -20,4 +29,43 @@
   display: block;
   text-align: center;
   padding: 23px 0;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
+
+.menu__link--line {
+
+  @media (min-width: $tablet) {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 12px;
+      border: 1px solid $thema;
+      width: 62px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 2px;
+      bottom: 11px;
+      border: 1px solid #ffffff;
+      width: 66px;
+    }
+  }
+}
+
