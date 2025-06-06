@@ -17,7 +17,13 @@
     &::before {
       content: "";
       position: absolute;
-      background: url("../../images/product-tablet.png") no-repeat 0 0;
+      background:
+        image-set(url("../../images/product/product-tablet@1x.webp") 1x type("image/webp"),
+          url("../../images/product/product-tablet@2x.webp") 2x type("image/webp"),
+          url("../../images/product/product-tablet@1x.png") 1x type("image/png"),
+          url("../../images/product/product-tablet@2x.png") 2x type("image/png"));
+      background-repeat: no-repeat;
+      background-position: 0 0;
       width: 709px;
       height: 609px;
       z-index: 1;
@@ -76,7 +82,13 @@
       position: absolute;
       left: 447px;
       top: 23px;
-      background: url("../../images/product-desktop.png") no-repeat 0 0;
+      background: image-set(
+          url("../../images/product/product-desktop@1x.webp") 1x type("image/webp"),
+          url("../../images/product/product-desktop@2x.webp") 2x type("image/webp"),
+          url("../../images/product/product-desktop@1x.png") 1x type("image/png"),
+          url("../../images/product/product-desktop@1x.png") 2x type("image/png"));
+      background-position: 0 0;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -99,8 +111,14 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: url("../../images/product-mobile.png") no-repeat 0 0;
-    z-index: 20;
+    background:  image-set(
+      url("../../images/product/product-mobile@1x.webp") 1x type("image/webp"),
+      url("../../images/product/product-mobile@2x.webp") 2x type("image/webp"),
+      url("../../images/product/product-mobile@1x.png") 1x type("image/png"),
+      url("../../images/product/product-mobile@2x.png") 2x type("image/png"));
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      z-index: 20;
 
     @media (min-width: $tablet) {
       display: none;
