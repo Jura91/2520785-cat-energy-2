@@ -3,6 +3,7 @@
   position: relative;
   background: url("../../images/logo/mobile-text.svg") no-repeat center 23px;
   z-index: 50;
+  border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet) {
     padding-top: 14px;
