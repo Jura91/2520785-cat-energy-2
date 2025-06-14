@@ -1,19 +1,39 @@
 .card {
   position: relative;
-
-&::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -20px;
-  right: -20px;
-  border-top: 1px solid #ebebeb;
+  padding: 20px 0 24px;
 
   @media (min-width: $tablet) {
-    border-top: none;
+    padding: 0;
+    width: 324px;
+    background-color: #f2f2f2;
+    padding: 11px 20px 74px;
+    box-sizing: border-box;
   }
 
-}
+  @media (min-width: $desktop) {
+    width: 245px;
+    padding: 0 20px 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    right: -20px;
+    border-top: 1px solid #ebebeb;
+
+    @media (min-width: $tablet) {
+      border-top: none;
+      height: 80px;
+      width: 100%;
+      left: 0;
+      right: unset;
+      top: 0;
+      background: #ffffff;
+      z-index: 1;
+    }
+  }
 }
 
 .card__container {
@@ -27,8 +47,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: unset;
+    min-width: unset;
   }
 }
+
 
 .card__image-link {
   width: 140px;
@@ -42,7 +68,7 @@
   width: 140px;
 
   @media (min-width: $tablet) {
-    width: 250px;
+    width: 100%;
   }
 }
 
@@ -103,18 +129,22 @@
   text-transform: uppercase;
   padding: 10px;
   margin: 15px 0 0;
+  box-sizing: border-box;
 
   @media (min-width: $tablet) {
-   margin: 32px auto 40px;
-   width: 250px;
+    width: 88%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet) {
+
   }
 }
 
 .card__wrap {
-  @media (min-width: $tablet) {
-
-  }
+  @media (min-width: $tablet) {}
 }
+
 .card__add-link {
   display: flex;
   flex-direction: column;
@@ -122,9 +152,7 @@
   text-decoration: none;
   padding-top: 5px;
 
-  @media (min-width: $tablet) {
-
-  }
+  @media (min-width: $tablet) {}
 }
 
 .card__text-main {
@@ -163,7 +191,7 @@
   }
 }
 
- .card__link-disabled {
+.card__link-disabled {
   display: block;
   font-family: $oswald;
   font-size: 16px;
@@ -176,12 +204,12 @@
   text-transform: uppercase;
   padding: 10px;
   margin: 15px 0 0;
- }
+}
 
- .card__image-add {
+.card__image-add {
 
   @media (min-width: $tablet) {
     padding-top: 50px;
     padding-bottom: 50px;
   }
- }
+}

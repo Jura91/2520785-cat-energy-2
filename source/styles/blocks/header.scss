@@ -11,6 +11,7 @@
     display: flex;
     justify-content: flex-end;
     margin: 13px 34px 0 10px;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop) {
@@ -27,6 +28,17 @@
 
   @media (min-width: $tablet) {
     top: 25px;
+    left: 20px;
+  }
+}
+
+.header__logo-catalog {
+  position: absolute;
+  top: 13px;
+  left: 20px;
+
+  @media (min-width: $tablet) {
+    top: 12px;
     left: 20px;
   }
 }

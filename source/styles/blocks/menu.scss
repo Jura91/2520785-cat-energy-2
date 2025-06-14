@@ -24,7 +24,7 @@
   line-height: 20px;
   letter-spacing: 0%;
   text-transform: uppercase;
-  color: black;
+  color: #000000;
   text-decoration: none;
   display: block;
   text-align: center;
@@ -44,6 +44,31 @@
   }
 }
 
+.menu__link-catalog {
+  font-family: $oswald;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 23px 0;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 9px 0 20px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+}
 .menu__link--line {
 
   @media (min-width: $tablet) {
@@ -78,7 +103,7 @@
       left: 0;
       bottom: 12px;
       border: 1px solid $thema;
-      width: 148px;
+      width: 152px;
     }
   }
 
@@ -86,10 +111,10 @@
     &::after {
       content: "";
       position: absolute;
-      left: 2px;
+      left: 0;
       bottom: 11px;
-      border: 1px solid #ffffff;
-      width: 66px;
+      border: 1px solid $thema;
+      width: 168px;
     }
   }
 }

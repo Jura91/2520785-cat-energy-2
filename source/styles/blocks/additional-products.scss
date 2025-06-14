@@ -1,44 +1,25 @@
 .additional-products {
-  margin: 0 20px;
   padding: 0;
 }
 
 .additional-products__title {
-  margin: 0 0 49px;
-  padding: 0;
-  font-family: $oswald;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  position: relative;
+  margin-bottom: 49px;
 
   @media(min-width: $tablet) {
-    margin: 0 0 80px;
-    font-size: 32px;
-    line-height: 32px;
-    background-color: #ffffff;
+    margin-bottom: 80px;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    border-top: 2px solid #68b738;
-    width: 34px;
-    top: 0;
-    right: -20px;
 
-    @media(min-width: $tablet) {
-      width: 100%;
-      top: 12px;
-      left: -20px;
-    }
-  }
 }
 
 .additional-products__list {
   list-style: none;
-  margin: 0 auto;
+  margin: 0 20px;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    margin: 0 30px;
+  }
 }
 
 .additional-products__items {
@@ -73,8 +54,6 @@
 .additional-products__wrap {
   display: flex;
   justify-content: space-between;
-
-  @media(min-width: $tablet) {}
 }
 
 .additional-products__quantity {
@@ -107,5 +86,27 @@
   @media (min-width: $tablet) {
     margin: 0;
     width: 632px;
+  }
+}
+
+.additional-products__block {
+  position: relative;
+  width: 280px;
+
+  &::before {
+    content: "";
+    width: 280px;
+    height: 290px;
+    background-image: image-set(
+        url ("../../images/cat-case/cat-case-m@1x.webp") 1x type("image/webp"),
+        url ("../../images/cat-case/cat-case-m@2x.webp") 2x type("image/webp"),
+        url ("../../images/cat-case/cat-case-m@1x.jpeg") 1x type("image/jpeg"),
+        url ("../../images/cat-case/cat-case-m@2x.jpeg") 2x type("image/jpeg"));
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
 }
